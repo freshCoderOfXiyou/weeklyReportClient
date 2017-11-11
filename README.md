@@ -1,0 +1,2 @@
+# weeklyReportClient
+周报系统的客户端部分,技术使用了VUE\axios,后端部分在我的另一个github项目weeklyReportServer之中.
