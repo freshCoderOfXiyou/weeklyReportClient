@@ -2,3 +2,11 @@
 	margin:0;
 	padding:0;
 }
+.common_btn{
+	background: #101923;
+	border-radius: 4px;
+	color:white;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+}	

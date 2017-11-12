@@ -4,15 +4,16 @@
 		<div id="columnManOuter">
 			<div id="columnManInner">
 				<tab :tabs="headerComponentArr"></tab>
-				<operaMain></operaMain>
+				<operaMain :operas="operaComArr" @pageOperaClickEvent="pageTabClick" @pageOperaSubmitEvent="pageSubmitClick"></operaMain>
 			</div>
 		</div>
+		{{operaComArr}}
 		<vfooter></vfooter>
 	</div>
 </template>
 <style type="text/css">
 #columnManOuter{
-	width: 100%;
+	width: 100%; 
 	background: #eee;
 
 }
@@ -39,6 +40,10 @@
 					{id:"deleteColumn" , txt:"删除栏目",bdColor:"lightred",handle:""},
 					{id:"updateColumn" , txt:"修改栏目",bdColor:"lightblue",handle:""},
 					{id:"queryColumn" , txt:"查看所有栏目",bdColor:"orange",handle:""}
+				],
+				operaComArr:[
+					{txt:"栏目中文名",id:"columManCname",value:""},
+					{txt:"栏目英文名",id:"columManEname",value:""}
 				]
 			}
 		},
@@ -47,6 +52,14 @@
 			vbanner,
 			tab,
 			operaMain
+		},
+		methods:{
+			pageSubmitClick:(arg)=>{
+				console.log("栏目管理"+arg);
+			},
+			pageTabClick:(arg)=>{
+				console.log("栏目管理"+arg);
+			}
 		}
 	}
 </script>

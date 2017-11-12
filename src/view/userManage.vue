@@ -4,6 +4,7 @@
 		<div id="Outer">
 			<div id="Inner">
 				<tab :tabs="userManTabs" @pageTabClickEvent="pageTabClick"></tab>
+				<opera :operas="operaComArr" @pageOperaClickEvent="pageTabClick" @pageOperaSubmitEvent="pageSubmitClick"></opera>
 			</div>
 		</div>
 		<vfooter></vfooter>
@@ -12,7 +13,7 @@
 <style type="text/css">
 #Outer{
 	width: 100%;
-	background: #eee;
+	background: #eee; 
 
 }
 #Inner{	
@@ -26,7 +27,7 @@
 	import vfooter from "@/components/vfooter.vue"
 	import vbanner from "@/components/banner.vue"
 	import tab from "@/components/tabComponent"
-
+	import opera from "@/components/operaMain"
 	export default {
 		data(){
 			return{
@@ -35,6 +36,11 @@
 					{id:"deleteUser" , txt:"删除用户",bdColor:"lightred",handle:""},
 					{id:"updateUser" , txt:"修改用户",bdColor:"lightblue",handle:""},
 					{id:"queryUser" , txt:"查看所有用户",bdColor:"orange",handle:""}
+				],
+				operaComArr:[
+					{txt:"工号",id:"userManId",value:""},
+					{txt:"姓名",id:"userManName",value:""},
+					{txt:"权限",id:"userManName",value:""}
 				]
 
 			}
@@ -42,11 +48,18 @@
 		components:{
 			vfooter,
 			vbanner,
-			tab
+			tab,
+			opera
 		},
 		methods:{
 			pageTabClick:function(arg) {
 				console.log("page",arg)
+			},
+			pageOperaClick:(arg)=>{
+				console.log("父组件"+arg);
+			},
+			pageSubmitClick:(arg)=>{
+				console.log("父组建接受"+arg);
 			}
 		}
 	}

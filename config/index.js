@@ -47,6 +47,14 @@ module.exports = {
             pathRewrite:{
                 "^/work":""
             }
+        }，
+        "/column":{
+            target:"http://127.0.0.1:3000/column",
+            secure:false,
+            changeOrigin:true,
+            pathRewrite:{
+                "^/column":""
+            }
         }
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"
