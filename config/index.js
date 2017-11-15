@@ -47,7 +47,7 @@ module.exports = {
             pathRewrite:{
                 "^/work":""
             }
-        }，
+        },
         "/column":{
             target:"http://127.0.0.1:3000/column",
             secure:false,

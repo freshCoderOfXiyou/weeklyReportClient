@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "express-generator": "^4.15.5",
+    "sweetalert": "^2.0.8",
     "sweetalert2": "^6.11.4",
     "vue": "^2.4.2",
     "vue-router": "^2.7.0"
