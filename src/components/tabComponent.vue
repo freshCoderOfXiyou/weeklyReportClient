@@ -9,7 +9,7 @@
 	display: flex;
 }
 	.operationClassSin{
-		flex: 1;
+		flex: 1; 
 		height: 35px;
 		line-height: 35px;margin:10px;
 	}
@@ -28,7 +28,8 @@
 			tabClick:function (e) {
 				console.log("components",e.target.id);
 				var eTarget = e.target.id ;
-				this.$emit("pageTabClickEvent", "pageTabClickEvent")
+				this.$emit("pageTabClickEvent", "pageTabClickEvent");
+					
 			}
 		},
 		components:{

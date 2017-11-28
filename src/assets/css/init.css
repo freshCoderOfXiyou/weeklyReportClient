@@ -1,6 +1,7 @@
 *{
 	margin:0;
 	padding:0;
+	user-select: none;
 }
 .common_btn{
 	background: #101923;
@@ -9,7 +10,15 @@
 	font-size: 18px;
 	font-weight: bold;
 	cursor: pointer;
+	user-select: none;
+	margin:0 20px;
+	height: 35px;
+	line-height: 35px;
 }	
+	.common_btn:hover{
+		color: red;
+	}
+	
 .disabledInput {
 	border: none;
 	outline: none;
@@ -17,4 +26,23 @@
 	color:#333;
 	background: #eee;
 	text-align: center;
+	user-select: none;
 }
+#contents{
+	background: #eee;
+}
+	.timeContainer{
+		height: 40px;
+		line-height: 40px;
+		text-align:right;
+		padding-right: 10px;
+
+	}
+		.timeContainer>span{
+			font-size: 18px;
+		}
+		.timeContainer>input{
+			height: 24px;
+			line-height: 24px;
+			font-size: 18px;
+		}

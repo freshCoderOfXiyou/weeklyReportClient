@@ -24,7 +24,8 @@
 			<!-- 多项选择 -->
 			<div class="operaMainChecks" v-else>
 				<div class="operaChecksSin" v-for="x in items.checks">
-					<input type="checkbox" :checked="x.checked" :id="x.ename" >
+					<!-- 绑定input时，不论什么类型，都应该通过v-model来绑定 -->
+					<input type="checkbox" v-model="x.checked" :id="x.ename" >
 					<label :for="x.ename">{{x.cname}}</label>
 				</div>
 			</div>

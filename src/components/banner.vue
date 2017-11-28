@@ -22,7 +22,9 @@
 					<router-link to="/userManage">用户管理</router-link>	
 				</li>
 			</ul>
-			<div id="acceBanUserName"  class="acceBanUserBtn">初始</div>
+			<div id="acceBanUserName"  class="acceBanUserBtn">
+				<slot name="userName"></slot>
+			</div>
 			<div id="acceBanExit" class="acceBanUserBtn">退出</div>
 		</div>
 	</div>

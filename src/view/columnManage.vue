@@ -1,6 +1,7 @@
 <template>
 	<div id="root">
-		<vbanner></vbanner>
+		<vbanner>
+			<span slot="userName">{{$store.state.name}}</span></vbanner>
 		<div id="columnManOuter">
 			<div id="columnManInner">
 				<tab :tabs="headerComponentArr"></tab>

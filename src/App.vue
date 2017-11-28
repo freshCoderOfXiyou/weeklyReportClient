@@ -11,6 +11,16 @@ export default {
   name: 'app',
   components:{
     // vfooter
+  },
+  methods:{
+    checkLogin(){
+
+      //检查用户登陆状态
+      if()
+    },
+    getCookie(){
+      
+    }
   }
 }
 </script>

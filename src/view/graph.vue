@@ -1,6 +1,7 @@
 <template>
 	<div id="root">
-		<vbanner></vbanner>
+		<vbanner>
+			<span slot="userName">{{$store.state.name}}</span></vbanner>
 		<div id="Outer">
 			<div id="Inner">
 			</div>

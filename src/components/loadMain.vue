@@ -217,10 +217,12 @@ export default {
 					id:this.userId
 				}).then((res)=>{
 					var loadBool = parseInt(res.data.result);
-					console.log(loadBool)
-					debugger;
+					// console.log(loadBool)
+					// debugger;
 					if (loadBool) {
 						// 成功
+						// 初始化用户名以及用户ID
+						this.$store.commit('initName');
 						router.push("/person")
 					}
 					else{

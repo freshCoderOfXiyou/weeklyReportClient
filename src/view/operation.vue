@@ -1,7 +1,8 @@
 <template>
 <!-- 序号栏目其他栏目类别维护更新活动专题故障处理弹窗数量登录注册提交两次密码输入不一至,请检查重新输入.密码或者帐号不存在. -->
 <div id="operaMain">
-	<vhead></vhead>
+	<vhead>
+			<span slot="userName">{{$store.state.name}}</span></vhead>
 	<div id="operaMainMid">
 	<span>{{dateValue}}</span>
 	<input type="month" name="" v-model="dateValue">
